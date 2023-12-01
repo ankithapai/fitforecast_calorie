@@ -16,7 +16,7 @@
         android:useLevel="true"
         android:innerRadiusRatio="3"
         android:thicknessRatio="10">
-    <solid android:color="#FFD700" /> <!-- dark blue -->
+    <solid android:color="#FFF700" /> <!-- dark blue -->
 </shape>
 </item>
 </layer-list>

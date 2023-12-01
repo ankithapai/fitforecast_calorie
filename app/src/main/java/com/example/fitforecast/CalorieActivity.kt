@@ -12,9 +12,9 @@ class CalorieActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calorie)
         val myCalorieView = findViewById<TextView>(R.id.calorieIntake)
-        val myCarbsView = findViewById<TextView>(R.id.carbs_split)
-        val myProteinView = findViewById<TextView>(R.id.protein_split)
-        val myFatView = findViewById<TextView>(R.id.fat_split)
+        val myCarbsView = findViewById<TextView>(R.id.carbs_split_text)
+        val myProteinView = findViewById<TextView>(R.id.protein_split_text)
+        val myFatView = findViewById<TextView>(R.id.fat_split_text)
         val exerciseView = findViewById<TextView>(R.id.exerciseSuggestion)
         findViewById<Button>(R.id.bulk).setOnClickListener {
             val randomCalories = Random.nextInt(1200, 2200)
@@ -22,9 +22,9 @@ class CalorieActivity: AppCompatActivity() {
             val calcProtein = ((randomCalories * 0.35) / randomCalories * 100).toInt()
             val calcFat = ((randomCalories * 0.20) / randomCalories * 100).toInt()
             myCalorieView.text = "Calories consumed: $randomCalories"
-            myCarbsView.text = "Carbs split: $calcCarb %"
-            myProteinView.text = "Protein split: $calcProtein %"
-            myFatView.text = "Fat split: $calcFat %"
+            myCarbsView.text = "$calcCarb%"
+            myProteinView.text = "$calcProtein%"
+            myFatView.text = "$calcFat%"
             exerciseView.text = "Weight 3hours, " +
                     "running 0.5 hours, " +
                     "yoga 0.3 hours"
@@ -40,9 +40,9 @@ class CalorieActivity: AppCompatActivity() {
             val calcProtein = ((randomCalories * 0.35) / randomCalories * 100).toInt()
             val calcFat = ((randomCalories * 0.30) / randomCalories * 100).toInt()
             myCalorieView.text = "Calories consumed: $randomCalories"
-            myCarbsView.text = "Carbs split: $calcCarb"
-            myProteinView.text = "Protein split: $calcProtein"
-            myFatView.text = "Fat split: $calcFat"
+            myCarbsView.text = "$calcCarb%"
+            myProteinView.text = "$calcProtein%"
+            myFatView.text = "$calcFat%"
             exerciseView.text = "Weight 0.2 hours, " +
                     "running 1.0 hours, " +
                     "yoga 1.0 hours"
@@ -58,9 +58,9 @@ class CalorieActivity: AppCompatActivity() {
             val calcProtein = ((randomCalories * 0.20) / randomCalories * 100).toInt()
             val calcFat = ((randomCalories * 0.35) / randomCalories * 100).toInt()
             myCalorieView.text = "Calories goal: $randomCalories"
-            myCarbsView.text = "Carbs: $calcCarb"
-            myProteinView.text = "Protein: $calcProtein"
-            myFatView.text = "Fat: $calcFat"
+            myCarbsView.text = "$calcCarb%"
+            myProteinView.text = "$calcProtein%"
+            myFatView.text = "$calcFat%"
             exerciseView.text = "Weight 1.5 hours, " +
                     "running 0.5 hours, " +
                     "yoga 1.0 hour, " +

@@ -117,13 +117,29 @@
             app:layout_constraintVertical_bias="0.682" />
 
         <TextView
+            android:id="@+id/fat_split_text"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="316dp"
+            android:text=""
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
             android:id="@+id/fat_split"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_marginStart="79dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="300dp"
-            android:text="Fat"
+            android:text="FAT"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -138,10 +154,26 @@
             android:layout_marginStart="202dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="162dp"
-            android:text="Carb"
+            android:text="CARB"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/carbs_split_text"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginEnd="178dp"
+            android:text=""
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.704"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
@@ -153,10 +185,26 @@
             android:layout_marginStart="306dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="33dp"
-            android:text="Protein"
+            android:text="PROTEIN"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/protein_split_text"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="306dp"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="33dp"
+            android:text=""
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />

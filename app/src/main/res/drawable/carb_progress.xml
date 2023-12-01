@@ -18,7 +18,7 @@
             android:shape="ring"
             android:thicknessRatio="8"
             android:useLevel="true">
-            <solid android:color="#8B0000" /> <!-- Adjust color as needed -->
+            <solid android:color="#8BD000" /> <!-- Adjust color as needed -->
         </shape>
     </item>
 </layer-list>
